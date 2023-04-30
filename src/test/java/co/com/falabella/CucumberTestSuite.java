@@ -1,4 +1,4 @@
-package starter;
+package co.com.falabella;
 
 import io.cucumber.junit.CucumberOptions;
 import net.serenitybdd.cucumber.CucumberWithSerenity;
