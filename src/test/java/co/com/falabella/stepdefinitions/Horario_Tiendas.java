@@ -7,13 +7,11 @@ import net.serenitybdd.screenplay.Actor;
 import net.serenitybdd.screenplay.actions.Click;
 import net.serenitybdd.screenplay.actions.MoveMouse;
 import net.serenitybdd.screenplay.actions.Open;
-import net.serenitybdd.screenplay.actions.Scroll;
-import net.serenitybdd.screenplay.ensure.Ensure;
 import net.serenitybdd.screenplay.waits.WaitUntil;
 
 import static co.com.falabella.pages.PaginaHorarioTiendas.*;
 import static co.com.falabella.pages.PaginaPrincipalPage.*;
-import static co.com.falabella.pages.PaginaTYC.ACCORDEON_TYC;
+import static co.com.falabella.pages.PaginaPoliticaDePrivacidad.ACCORDEON_POLITICA_DE_PRIVACIDAD;
 import static net.serenitybdd.screenplay.matchers.WebElementStateMatchers.isVisible;
 
 
@@ -30,14 +28,14 @@ public class Horario_Tiendas {
 
         );
     }
-    @Cuando("{actor} selecciona tiendas Falabella")
+    @Cuando("{actor} selecciona tiendas Homecenter")
     public void ClickBotonTYC(Actor actor) {
         actor.attemptsTo(
                 Click.on(OK_SALTAR),
-                Click.on(BOTON_TIENDAFALABELLA)
+                Click.on(BOTON_TIENDAHOMECENTER)
         );
     }
-    @Entonces("{actor} verifica que aparezca las 11 ciudades")
+    @Entonces("{actor} verifica que aparezca las 24 tiendas")
     public void Acordion_TYC(Actor actor) {
         actor.attemptsTo(
                 WaitUntil.the(IFRAME_WAIT, isVisible())
