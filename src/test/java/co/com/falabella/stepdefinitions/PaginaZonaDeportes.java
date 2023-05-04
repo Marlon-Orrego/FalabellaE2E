@@ -15,7 +15,7 @@ import static co.com.falabella.pages.PaginaZonaDeportes.ZONA_DEPORTES;
 
 public class PaginaZonaDeportes {
 
-    @Dado("{actor} busca la sección de {string}")
+    @Dado("{actor} busca la seccion de {string}")
     public void buscarLinkDeportes(Actor actor, String seccion) {
         actor.attemptsTo(
                 Open.url("https://www.falabella.com.co"),
@@ -23,13 +23,13 @@ public class PaginaZonaDeportes {
                 Ensure.that(SECCION_DEPORTES).text().isEqualTo(seccion)
         );
     }
-    @Cuando("{actor} da click en el link de la sección de Deportes")
+    @Cuando("{actor} da click en el link de la seccion de Deportes")
     public void daClickAlLink(Actor actor) {
         actor.attemptsTo(
                 Click.on(CLICKEAR_LINK_DEPORTES)
         );
     }
-    @Entonces("{actor} esta en la {string}")
+    @Entonces("{actor} esta en la zona {string}")
     public void estarEnLaZonaDeportes(Actor actor, String zona) {
          actor.attemptsTo(
             Click.on(OK_SALTAR),
@@ -38,5 +38,3 @@ public class PaginaZonaDeportes {
 
     }
 }
-
-// throw new io.cucumber.java.PendingException();

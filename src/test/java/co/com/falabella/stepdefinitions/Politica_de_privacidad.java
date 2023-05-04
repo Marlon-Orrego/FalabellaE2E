@@ -15,7 +15,7 @@ import static co.com.falabella.pages.PaginaPoliticaDePrivacidad.ACCORDEON_POLITI
 
 public class Politica_de_privacidad {
 
-    @Dado("{actor} se dirige haciendo scroll hasta el botón de Política de privacidad")
+    @Dado("{actor} se dirige haciendo scroll hasta el boton de Politica de privacidad")
     public void ScrollHastaPolíticaDePrivacidad(Actor actor) {
         actor.attemptsTo(
                 Open.url("https://www.falabella.com.co"),
@@ -24,14 +24,14 @@ public class Politica_de_privacidad {
 
         );
     }
-    @Cuando("{actor} da click a Política de privacidad")
+    @Cuando("{actor} da click a Politica de privacidad")
     public void ClickBotonPolíticaDePrivacidad(Actor actor) {
         actor.attemptsTo(
                 Click.on(BOTON_POLITICA_DE_PRIVACIDAD)
         );
     }
-    @Entonces("{actor} deben de estar todas las Política de Privacidad")
-    public void Acordion_PolíticaDePrivacidad(Actor actor) {
+    @Entonces("{actor} deben de estar todas las Politicas de Privacidad")
+    public void ContenidoPoliticaDePrivacidad(Actor actor) {
         actor.attemptsTo(
                 Click.on(OK_SALTAR),
                 Ensure.that(ACCORDEON_POLITICA_DE_PRIVACIDAD).textValues().hasSizeGreaterThanOrEqualTo(23)
