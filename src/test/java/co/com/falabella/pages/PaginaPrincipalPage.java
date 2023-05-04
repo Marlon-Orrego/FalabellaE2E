@@ -11,8 +11,6 @@ public class PaginaPrincipalPage {
 
     public static Target BOTON_FALABELLA = Target.the("Boton de Falabella").locatedBy("//a[@href=\"https://tienda.falabella.com.co/falabella-co\"]");
 
-    public static Target BOTON_Carrito = Target.the("Boton de Carrito").locatedBy("//a[@id=\"testId-UserAction-basket\"]");
-
     public static Target  BOTON_POLITICA_DE_PRIVACIDAD= Target.the("Boton de Política de Privacidad").locatedBy("//a[@href=\"https://www.falabella.com.co/falabella-co/page/politica-de-tratamientos-de-datos-personales\"]");
 
     public static Target  SECCION_AYUDA= Target.the("Seccion de ayuda").located(By.id("testId-extra-links-dropdown-4"));

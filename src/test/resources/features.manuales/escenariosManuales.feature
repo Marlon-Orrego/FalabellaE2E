@@ -1,32 +1,34 @@
-#language: es
+#Language: es
 
 @Manual
-  Escenario: Buscar un articulo en la barra de busqueda
-  Dado que Isabel esta en la pagina de Falabella
-  Cuando Isabel escribe el nombre de un articulo en la barra de busqueda
-  Entonces Isabel debe encontrar el producto
+  Escenario: Abrir una cuenta CMR
+  Dado que Jackeline esta en la pagina de Falabella
+  Cuando Jackeline ingresa en Abre tu CMR
+  Entonces Jackeline debe ver un formulario de apertura de cuenta
 
 @Manual
-  Escenario: Ver el estado actual de un pedido
-  Dado que Isabel busca el estado de un producto
-  Cuando Isabel ingresa a "mis pedidos"
-  Entonces Isabel debe ver el estado del pedido
+  Escenario: Seguir compras y pedidos
+  Dado que Jackeline esta en la pagina de Falabella
+  Cuando Jackeline ingresa en Sigue tus compras y pedidos
+  Entonces Jackeline debe iniciar sesión
 
 @Manual
-  Escenario: Iniciar sesion en la pagina de Falabella
-  Dado que Isabel inicia sesion en Falabella
-  Cuando Isabel ingresa sus credenciales
-  Entonces Isabel debe iniciar sesion exitosamente
+  Escenario: Encontrar productos en la pagina de mundo bebe
+  Dado que Jackeline esta en la pagina de inicio de Falabella
+  Cuando Jackeline ingresa a guías de compra
+  Y Jackeline ingresa a Mundo Bebe
+  Y Jackeline selecciona productos de la primera muda
+  Entonces Jackeline debe encontrar productos relacionados a la primera muda
 
 @Manual
-  Escenario: Filtrar los precios en la pagina de Falabella
-  Dado que Isabel filtra el precio de un articulo
-  Cuando Isabel seleccione la categoria de precios y seleccione el filtrado por precio
-  Entonces Isabel debe ver los productos filtrados por precio
+  Escenario: Verificar el telefono de ventas Falabella
+  Dado que Jackeline este en la pagina principal de Falabella
+  Cuando Jackeline desplegue el menu
+  Entonces Jackeline debe ver el telefono de ventas
 
 @Manual
-  Escenario: Solicitar el formulario para una devolucion
-  Dado que Isabel necesita realizar una devolucion
-  Cuando Isabel selecciona el apartado mis pedidos y luego solicitar devolucion
-  Entonces Isabel debe ver el formulario para realizar una devolucion
-
+  Escenario: Ver las nuevas noticias de los inversionistas de Falabella
+  Dado que Jackeline esta en la pagina principal de Falabella
+  Cuando Jackeline ingresa a nuestros inversionistas
+  Y Jackeline ingresa a view all news
+  Entonces Jackeline debe encontrar todas las nuevas noticias
