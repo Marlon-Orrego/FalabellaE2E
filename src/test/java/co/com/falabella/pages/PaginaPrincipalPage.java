@@ -10,6 +10,7 @@ public class PaginaPrincipalPage {
     public static Target SECCION_DEPORTES = Target.the("Busca el link de Deportes").locatedBy("//div[@id=\"main-CollapsedCards-8e7c2335-e558-40db-b15f-aebc1eb55240-desktop-card-2\"]//a//div//div[@class=\"w-100 Card-module_title__Hv8yR Card-module_title-16__KDT3e\"]");
 
     public static Target BOTON_FALABELLA = Target.the("Boton de Falabella").locatedBy("//a[@href=\"https://tienda.falabella.com.co/falabella-co\"]");
+    public static Target BOTON_FALABELLA_SELL = Target.the("Boton de Falabella").locatedBy("//div[@class=\"NextAccesses-module_categoryTitle__1lWma\"][contains(text(), \"Vende en falabella.com\")]\n");
 
     public static Target  BOTON_POLITICA_DE_PRIVACIDAD= Target.the("Boton de Política de Privacidad").locatedBy("//a[@href=\"https://www.falabella.com.co/falabella-co/page/politica-de-tratamientos-de-datos-personales\"]");
 

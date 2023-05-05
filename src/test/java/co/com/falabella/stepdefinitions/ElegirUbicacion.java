@@ -11,13 +11,7 @@ import org.openqa.selenium.Keys;
 
 import java.util.Collections;
 
-import static co.com.falabella.pages.DetailLocationPage.INPUT_CIUDAD;
-import static co.com.falabella.pages.DetailLocationPage.INPUT_BARRIO;
-import static co.com.falabella.pages.DetailLocationPage.INPUT_DEPARTAMENTO;
-import static co.com.falabella.pages.DetailLocationPage.BOTON_INGRESAR_UBICACION;
-import static co.com.falabella.pages.DetailLocationPage.ETIQUETA_UBICACION;
-import static co.com.falabella.pages.DetailLocationPage.MODAL_LOCATION;
-
+import static co.com.falabella.pages.DetailLocationPage.*;
 import static co.com.falabella.pages.PaginaHorarioTiendas.IFRAME_WAIT;
 import static co.com.falabella.pages.PaginaPrincipalPage.OK_SALTAR;
 import static co.com.falabella.pages.PaginaPrincipalPage.SECCION_AYUDA;
@@ -36,13 +30,23 @@ public class ElegirUbicacion {
         );
     }
 
-    @Cuando("{actor} elige como departamento {string}, ciudad {string}, y barrio {string}")
-    public void buscarBarra(Actor actor, String departamento, String ciudad, String barrio) {
+    @Cuando("{actor} elige como departamento antioquia, ciudad medellin, y barrio medellin")
+    public void buscarBarra(Actor actor) {
         actor.attemptsTo(
                 Ensure.that(MODAL_LOCATION).isDisplayed(),
-                Enter.theValue(departamento).into(INPUT_DEPARTAMENTO),
-                Enter.theValue(ciudad).into(INPUT_CIUDAD),
-                Enter.theValue(barrio).into(INPUT_BARRIO)
+
+                Click.on(INPUT_DEPARTAMENTO),
+                Click.on(INPUT_DEPARTAMENTO_SELECTED),
+
+                Click.on(INPUT_CIUDAD),
+                Scroll.to(INPUT_CIUDAD_SELECTED),
+                Click.on(INPUT_CIUDAD_SELECTED),
+
+                Click.on(INPUT_BARRIO),
+                Click.on(INPUT_BARRIO_SELECTED),
+
+                Click.on(BOTON_GUARDAR)
+
         );
     }
 
