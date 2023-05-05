@@ -11,3 +11,4 @@ Escenario automatizado Políticas de Privacidad
 ![Política De Privacidad](https://user-images.githubusercontent.com/55565109/236090590-ad2bf7a9-ff1d-4755-8102-9777b3982cb2.png)
 
 Escenario automatizado numero 5
+![Vender en Falabella](https://user-images.githubusercontent.com/55565109/236375905-faf4e849-1d95-454a-9230-30359746b100.png)
