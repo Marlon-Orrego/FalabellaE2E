@@ -5,9 +5,13 @@ import org.openqa.selenium.By;
 
 public class PaginaPrincipalPage {
     public static Target CLICKEAR_LINK_DEPORTES = Target.the("Clickear link").locatedBy("//div[@id=\"main-CollapsedCards-8e7c2335-e558-40db-b15f-aebc1eb55240-desktop-card-2\"]//a[@data-testid=\"card-link\"]");
+    public static Target CLICKEAR_LINK_MASCOTAS = Target.the("Clickear link").locatedBy("//div[@id=\"main-CollapsedCards-eee59dc1-62e2-443a-ae7a-b23b2917ef91-desktop-card-1\"]//a[@data-testid=\"card-link\"]");
+
     public static Target OK_SALTAR = Target.the("Saltar").located(By.id("testId-onboarding-desktop-skip"));
 
     public static Target SECCION_DEPORTES = Target.the("Busca el link de Deportes").locatedBy("//div[@id=\"main-CollapsedCards-8e7c2335-e558-40db-b15f-aebc1eb55240-desktop-card-2\"]//a//div//div[@class=\"w-100 Card-module_title__Hv8yR Card-module_title-16__KDT3e\"]");
+
+    public static Target SECCION_MASCOTAS = Target.the("Busca el link de Mascotas").locatedBy("//div[@id=\"main-CollapsedCards-eee59dc1-62e2-443a-ae7a-b23b2917ef91-desktop-card-1\"]//a//div//div[@class=\"w-100 Card-module_title__Hv8yR Card-module_title-16__KDT3e\"]");
 
     public static Target BOTON_FALABELLA = Target.the("Boton de Falabella").locatedBy("//a[@href=\"https://tienda.falabella.com.co/falabella-co\"]");
     public static Target BOTON_FALABELLA_SELL = Target.the("Boton de Falabella").locatedBy("//div[@class=\"NextAccesses-module_categoryTitle__1lWma\"][contains(text(), \"Vende en falabella.com\")]\n");
